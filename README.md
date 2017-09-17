@@ -9,7 +9,7 @@
 Run the following.
 
 ```
-docker-compose up
+./start.sh
 ```
 
 ## Stop
@@ -17,5 +17,5 @@ docker-compose up
 Press `ctl + C` and run the following.
 
 ```
-docker-compose up
+./stop.sh
 ```
