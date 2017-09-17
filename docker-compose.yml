@@ -1,0 +1,32 @@
+version: "3.2"
+
+services:
+
+  the-book-of-problems:
+    image: mrrusof/the-book-of-problems
+    ports:
+      - 80:80
+    depends_on:
+      - the-courtroom
+      - the-official-journal
+
+  the-courtroom:
+    image: mrrusof/the-courtroom
+    ports:
+      - 8080:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    links:
+      - the-law
+
+  the-official-journal:
+    image: mrrusof/the-official-journal
+    ports:
+      - 3000:3000
+    links:
+      - the-law
+
+  the-law:
+    image: mrrusof/the-law
+    ports:
+      - 5432:5432
