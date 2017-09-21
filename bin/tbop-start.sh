@@ -2,4 +2,4 @@
 
 docker pull mrrusof/ruby-judge
 docker pull mrrusof/ruby-sandbox
-docker-compose up
+cd /opt/tbop/share && docker-compose up -d

@@ -4,18 +4,20 @@
 
 - docker-compose version 1.15.0-rc1, build 2188098
 
-## Start
-
-Run the following.
+## Install
 
 ```
-./start.sh
+sudo ./install.sh
+```
+
+## Start
+
+```
+sudo /etc/init.d/tbop.sh start
 ```
 
 ## Stop
 
-Press `ctl + C` and run the following.
-
 ```
-./stop.sh
+sudo /etc/init.d/tbop.sh stop
 ```
