@@ -1,9 +1,8 @@
 #!/bin/bash
 
-docker pull mrrusof/judge
-docker pull mrrusof/ruby-sandbox
-docker pull mrrusof/python-sandbox
-docker pull mrrusof/elixir-sandbox
-cd /opt/tbop/share && \
+ROOT=/opt/tbop
+
+$ROOT/tws/bin/the-witness-stand --download
+cd $ROOT/share && \
     docker-compose pull && \
     docker-compose up -d
