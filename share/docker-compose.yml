@@ -28,5 +28,3 @@ services:
 
   the-law:
     image: mrrusof/the-law
-    ports:
-      - 5432:5432
